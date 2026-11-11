@@ -4,12 +4,19 @@ import java.util.Scanner;
 class Logica{
 
     public int Metodo(int[] suma, int longitud ){
-        int total=0;
+       
+
+        int mayor=suma[0];
 
         for (int i = 0; i < longitud; i++) {
-            total += suma[i];       
+            if(mayor<suma[i]){
+                mayor =suma[i];
+            }
         }
-        return total;
+        return mayor;
+
+        
+        
         
     }
 
@@ -32,9 +39,10 @@ for(int i=0;i <longitud;i++){
     lista[i]=usuario.nextInt();
 }
 
-int total=cliente.Metodo(lista, longitud);
 
-System.out.println("Total de las ventas " + total);
+int mayor = cliente.Metodo(lista, longitud);
+
+System.out.println("Venta mas alta " + mayor);
 }
 
 }
