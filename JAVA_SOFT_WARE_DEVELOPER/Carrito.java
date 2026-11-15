@@ -36,8 +36,10 @@ public class Carrito {
         System.out.println("Por favor digame los elementos de su carrito ");
         letrass=usuario.nextLine();
 
+        if(!letrass.equalsIgnoreCase("Para")){
         cliente.letras(letrass, contador);
         contador++;
+        }
 
        }while(!letrass.equalsIgnoreCase("Para"));
 
@@ -46,9 +48,9 @@ public class Carrito {
        if(Cachararray!=null){
 
          System.out.println("Los elementos de su carrito ");
-         int sin_para= contador-1;
+        
 
-        for (int i = 0; i < sin_para; i++) {
+        for (int i = 0; i < contador; i++) {
            
             System.out.print(Cachararray[i] + ",");
         
