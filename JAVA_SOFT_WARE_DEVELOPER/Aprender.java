@@ -5,7 +5,6 @@ class Logica{
 
     public int Metodo(int[] suma, int longitud ){
        
-
         int mayor=suma[0];
 
         for (int i = 0; i < longitud; i++) {
@@ -14,10 +13,6 @@ class Logica{
             }
         }
         return mayor;
-
-        
-        
-        
     }
 
 }
@@ -44,5 +39,4 @@ int mayor = cliente.Metodo(lista, longitud);
 
 System.out.println("Venta mas alta " + mayor);
 }
-
 }
