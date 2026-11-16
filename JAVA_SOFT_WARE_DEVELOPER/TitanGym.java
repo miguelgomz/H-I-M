@@ -54,8 +54,10 @@ public class TitanGym {
          String Renovacion;
          int cantidad_meses=0;
          Logica_Interna cliente = new Logica_Interna("Lucas",0);
-         Logica_Interna cliente1 = null;
+         //  array de clientes 
+         //Logica_Interna cliente3 = new Logica_Interna("Luar",3);
          
+         Logica_Interna cliente1 = null;
          String eres_cliente;
          String cliente_name;
          String nuevos_clientes_inscripcion;
