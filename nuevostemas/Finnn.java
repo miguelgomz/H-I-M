@@ -1,5 +1,6 @@
 package nuevostemas;
 import java.util.Scanner;
+
 public class Finnn {
     public static void main(String[] args) {
         Scanner usuario = new Scanner(System.in);
