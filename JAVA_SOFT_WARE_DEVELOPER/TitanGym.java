@@ -20,9 +20,12 @@ class Logica_Interna {
         usuarioo.nextLine();
         nuevos_clientes[0]=name;
         nuevos_clientes[1]=String.valueOf(meses);
+    
 
         return nuevos_clientes;
     }
+
+
 
     private String name;
     private int meses=0;
@@ -51,12 +54,24 @@ class Logica_Interna {
 public class TitanGym {
     public static void main(String[] args) {
          Scanner usuario= new Scanner(System.in);
+
+         Logica_Interna[] clientes = new Logica_Interna[10];
+
+
          String Renovacion;
          int cantidad_meses=0;
          Logica_Interna cliente = new Logica_Interna("Lucas",0);
+         Logica_Interna cliente3 = new Logica_Interna("Lucas",0);
+         
          //  array de clientes 
          //Logica_Interna cliente3 = new Logica_Interna("Luar",3);
-         
+         clientes[0]=cliente;
+         clientes[1]=cliente3;
+         int indeice =1;
+
+        
+
+         //
          Logica_Interna cliente1 = null;
          String eres_cliente;
          String cliente_name;
@@ -70,7 +85,8 @@ public class TitanGym {
             if (eres_cliente.equalsIgnoreCase("si")){
 
                 System.out.println("Dime tu nombre ");
-                cliente_name=usuario.nextLine();
+                cliente_name=usuario.nextLine();    
+                    
                 if (cliente_name.equalsIgnoreCase(cliente.getname())){
                     System.out.println("Si eres cliente ");
 
