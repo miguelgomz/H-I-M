@@ -16,6 +16,8 @@ class Logica {
 public class Thrroow {
     public static void main(String[] args) {
         Scanner usuario = new Scanner(System.in);
+        
+         
         int edd;
         Logica cliente = new Logica();
 
